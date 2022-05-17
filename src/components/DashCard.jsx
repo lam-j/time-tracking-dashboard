@@ -36,8 +36,10 @@ export default function DashCard(props) {
                         <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
                     </button>
                 </div>
-                <h1>{current()}hrs</h1>
-                <p>{previous()}hrs</p>
+                <div className="dash-card-body">
+                    <h1>{current()}hrs</h1>
+                    <p>{previous()}hrs</p>
+                </div>
             </div>
         </div>
     );

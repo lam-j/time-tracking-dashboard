@@ -7,10 +7,14 @@ export default function UserCard(props) {
 
     return (
         <div className="user-card">
-            <div className="user-name">
-                <img src="./images/image-jeremy.png" alt="user" />
-                <p>Report for</p>
-                <h1>Jeremy Robson</h1>
+            <div className="user-profile">
+                <div className="user-image">
+                    <img src="./images/image-jeremy.png" alt="user" />
+                </div>
+                <div className="user-name">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
             </div>
             <div className="timeframe">
                 <button onClick={handleClick} className="daily">
