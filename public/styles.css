@@ -1,0 +1,163 @@
+:root {
+    /* ### Primary */
+
+    --blue: hsl(246, 80%, 60%);
+    --lightOrange: hsl(15, 100%, 70%);
+    --softBlue: hsl(195, 74%, 62%);
+    --lightRed: hsl(348, 100%, 68%);
+    --limeGreen: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --softYellow: hsl(43, 84%, 65%);
+
+    /* ### Neutral */
+
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --darkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    color: var(--paleBlue);
+    display: grid;
+    place-items: center;
+    margin: 10% 25%;
+    font-family: "Rubik", sans-serif;
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1.5rem;
+}
+
+.user-card {
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+    display: grid;
+}
+.user-name {
+    background-color: var(--blue);
+    border-radius: 15px;
+    padding: 30px 30px 0;
+}
+.user-name p {
+    margin: 15% 0 3%;
+}
+.user-name h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.user-name > img {
+    border: 2px solid white;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+.timeframe {
+    background-color: var(--darkBlue);
+    border-radius: 0 0 10px 10px;
+    display: grid;
+    padding: 20px 30px 10px;
+}
+.timeframe > button {
+    background-color: transparent;
+    border: none;
+    color: var(--DesaturatedBlue);
+    font-family: "Rubik", sans-serif;
+    padding: 0 0 15px;
+    text-align: left;
+}
+.timeframe > button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+}
+
+.dash-card {
+    border-radius: 15px;
+    display: grid;
+    background-position: top 0 right 10px;
+    background-repeat: no-repeat;
+    background-size: 60px;
+}
+.work {
+    background-color: var(--lightOrange);
+    background-image: url(images/icon-work.svg);
+}
+.play {
+    background-color: var(--softBlue);
+    background-image: url(images/icon-play.svg);
+}
+.study {
+    background-color: var(--lightRed);
+    background-image: url(images/icon-study.svg);
+}
+.exercise {
+    background-color: var(--limeGreen);
+    background-image: url(images/icon-exercise.svg);
+}
+.social {
+    background-color: var(--violet);
+    background-image: url(images/icon-social.svg);
+}
+.self-care {
+    background-color: var(--softYellow);
+    background-image: url(images/icon-self-care.svg);
+}
+
+.dash-card-wrapper {
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+    padding-left: 20px;
+    align-self: flex-end;
+}
+.dash-card-wrapper:hover {
+    background-color: hsl(235, 46%, 30%);
+    cursor: pointer;
+}
+.dash-card-wrapper > h1 {
+    font-size: 36px;
+    margin: 0;
+}
+.dash-card-wrapper > p {
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.dash-card-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.dash-card-title > p {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.dash-card-title > button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -4px;
+    right: -10px;
+}
+.dash-card-title img {
+    height: 4px;
+    width: 12px;
+}
